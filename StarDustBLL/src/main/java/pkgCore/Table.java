@@ -53,9 +53,8 @@ public class Table {
 	 * SetTablePlayers - set the TablePlayers ArrayList with given Players
 	 * @param Players - set of Players to add to the table
 	 */
-	public void SetTablePlayers(ArrayList<Player> Players)
-	{
-		//FIXME: clear the table and add all the players.
+	public void SetTablePlayers(ArrayList<Player> Players) {
+		this.TablePlayers = Players; 
 	}
 	
 	/**
@@ -66,9 +65,8 @@ public class Table {
 	 * AddPlayerToTable - Add a single Player to the table.
 	 * @param player - Player to be added
 	 */
-	public void AddPlayerToTable(Player player)
-	{
-		//FIXME: Add a player to the table
+	public void AddPlayerToTable(Player player) {
+		TablePlayers.add(player);
 	}
 	
 	/**
@@ -79,9 +77,8 @@ public class Table {
 	 * RemovePlayerFromTable - Remove a single player from the Table.
 	 * @param p
 	 */
-	public void RemovePlayerFromTable(Player p)
-	{
-		//FIXME: Remove a player from the table
+	public void RemovePlayerFromTable(Player p) {
+		TablePlayers.remove(p);
 	}
 	
 	/**
@@ -92,10 +89,8 @@ public class Table {
 	 * getTablePlayers - return an ArrayList of players at the table
 	 * @return
 	 */
-	public ArrayList<Player> getTablePlayers()
-	{
-		//FIXME: This should return the TablePlayers (don't return null).
-		return null;
+	public ArrayList<Player> getTablePlayers(){
+		return this.TablePlayers;
 	}
 
 }

@@ -19,12 +19,11 @@ public class Player {
 	}
 
 	public String getPlayerName() {
-		//FIXME: Get the player name (do not return null);
-		return null;
+		return this.PlayerName;
 	}
 
 	public void setPlayerName(String playerName) {
-		//FIXME: Set the player name
+		this.PlayerName = playerName;
 	}
 
 	public UUID getPlayerID() {
